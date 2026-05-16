@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="script.js" type="module" defer></script>
+    <title>Color Scheme Generator</title>
+  </head>
+  <body>
+    <main>
+      <form id="scheme-control" class="scheme-control">
+        <input type="color" id="seed-color" />
+        <select name="color-mode" id="color-mode" required>
+          <option value="">Choose color mode</option>
+          <option value="monochrome">Monochrome</option>
+          <option value="monochrome-dark">Monochrome-Dark</option>
+          <option value="monochrome-light">Monochrome-Light</option>
+          <option value="analogic">Analogic</option>
+          <option value="complement">Complement</option>
+          <option value="analogic-complement">Analogic Complement</option>
+          <option value="triad">Triad</option>
+          <option value="quad">Quad</option>
+        </select>
+        <button type="submit">Get color scheme</button>
+      </form>
+
+      <div id="color-scheme" class="color-scheme">
+        <div class="column">
+          <div class="color" style="background-color: #fff"></div>
+          <div class="hex-value">#219ebc</div>
+        </div>
+        <div class="column">
+          <div class="color"></div>
+          <div class="hex-value">#219ebc</div>
+        </div>
+        <div class="column">
+          <div class="color"></div>
+          <div class="hex-value">#219ebc</div>
+        </div>
+        <div class="column">
+          <div class="color"></div>
+          <div class="hex-value">#219ebc</div>
+        </div>
+        <div class="column">
+          <div class="color"></div>
+          <div class="hex-value">#219ebc</div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
